@@ -200,8 +200,16 @@ class Slog {
     var formatter = DateFormat(_completeDateformat);
     String formattedDate = formatter.format(now);
 
-    String newMessage =
-        "$formattedDate: $tag : $text${exception == null && stackTrace == null ? "" : ""}${exception != null ? "\t\tException -> $exception" : ""}${stackTrace != null ? "\t\tStackTrace -> $stackTrace" : ""}";
+    String newMessage = "$formattedDate: $tag : $text";
+
+    if (exception != null) {
+      newMessage += "\n\t\tException -> $exception";
+    }
+    if (stackTrace != null) {
+      newMessage += "\n\t\tStackTrace -> $stackTrace";
+    }
+
+    newMessage += "\n"; // Ensure only one newline
 
     /// Writing the log into log file
     try {
