@@ -1,7 +1,7 @@
 archive
 3.0
-file:///Users/m1mac/.pub-cache/hosted/pub.dev/archive-3.6.1/
-file:///Users/m1mac/.pub-cache/hosted/pub.dev/archive-3.6.1/lib/
+file:///Users/m1mac/.pub-cache/hosted/pub.dev/archive-4.0.2/
+file:///Users/m1mac/.pub-cache/hosted/pub.dev/archive-4.0.2/lib/
 async
 2.18
 file:///Users/m1mac/.pub-cache/hosted/pub.dev/async-2.11.0/
@@ -150,6 +150,10 @@ plugin_platform_interface
 3.0
 file:///Users/m1mac/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8/
 file:///Users/m1mac/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8/lib/
+posix
+3.0
+file:///Users/m1mac/.pub-cache/hosted/pub.dev/posix-6.0.1/
+file:///Users/m1mac/.pub-cache/hosted/pub.dev/posix-6.0.1/lib/
 source_span
 2.18
 file:///Users/m1mac/.pub-cache/hosted/pub.dev/source_span-1.10.0/

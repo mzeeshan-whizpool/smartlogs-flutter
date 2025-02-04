@@ -73,7 +73,7 @@ class Slog {
 
       /// Checking for zip fiel if exist delete it
       final zipDirectory =
-          Directory('${_logDirectory!.parent.path}/$_zipFolderName');
+      Directory('${_logDirectory!.parent.path}/$_zipFolderName');
 
       if (zipDirectory.existsSync()) {
         zipDirectory.deleteSync(recursive: true);
@@ -83,7 +83,7 @@ class Slog {
       _instance = Slog._();
       if (_logDirectory != null) {
         bool fileExist =
-            File('${_logDirectory!.path}/$_logFileName').existsSync();
+        File('${_logDirectory!.path}/$_logFileName').existsSync();
         if (!_logDirectory!.existsSync()) {
           _logDirectory!.createSync();
         }
@@ -200,16 +200,8 @@ class Slog {
     var formatter = DateFormat(_completeDateformat);
     String formattedDate = formatter.format(now);
 
-    String newMessage = "$formattedDate: $tag : $text";
-
-    if (exception != null) {
-      newMessage += "\n\t\tException -> $exception";
-    }
-    if (stackTrace != null) {
-      newMessage += "\n\t\tStackTrace -> $stackTrace";
-    }
-
-    newMessage += "\n"; // Ensure only one newline
+    String newMessage =
+        "$formattedDate: $tag : $text${exception == null && stackTrace == null ? "\n" : ""}${exception != null ? "\n\t\tException -> $exception" : ""}${stackTrace != null ? "\n\t\tStackTrace -> $stackTrace" : ""}";
 
     /// Writing the log into log file
     try {
@@ -326,7 +318,7 @@ class Slog {
   /// Method to create json file which contain only device and app information
   Future<String> getJsonFile() async {
     final zipDirectory =
-        Directory('${_logDirectory!.parent.path}/$_zipFolderName');
+    Directory('${_logDirectory!.parent.path}/$_zipFolderName');
 
     /// checking if zip directory not exists create one
     if (!await zipDirectory.exists()) {

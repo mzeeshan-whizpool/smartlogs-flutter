@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "archive",
-      "rootUri": "file:///Users/m1mac/.pub-cache/hosted/pub.dev/archive-3.6.1",
+      "rootUri": "file:///Users/m1mac/.pub-cache/hosted/pub.dev/archive-4.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -248,6 +248,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "posix",
+      "rootUri": "file:///Users/m1mac/.pub-cache/hosted/pub.dev/posix-6.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/m1mac/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -338,7 +344,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2025-01-30T10:25:08.918900Z",
+  "generated": "2025-02-04T11:41:05.946666Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///Users/m1mac/flutter",
