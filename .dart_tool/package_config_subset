@@ -75,9 +75,9 @@ http_parser
 file:///Users/m1mac/.pub-cache/hosted/pub.dev/http_parser-4.0.2/
 file:///Users/m1mac/.pub-cache/hosted/pub.dev/http_parser-4.0.2/lib/
 intl
-3.0
-file:///Users/m1mac/.pub-cache/hosted/pub.dev/intl-0.19.0/
-file:///Users/m1mac/.pub-cache/hosted/pub.dev/intl-0.19.0/lib/
+3.3
+file:///Users/m1mac/.pub-cache/hosted/pub.dev/intl-0.20.2/
+file:///Users/m1mac/.pub-cache/hosted/pub.dev/intl-0.20.2/lib/
 leak_tracker
 3.2
 file:///Users/m1mac/.pub-cache/hosted/pub.dev/leak_tracker-10.0.7/
