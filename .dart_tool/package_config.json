@@ -63,7 +63,7 @@
     },
     {
       "name": "disk_space_upgrade",
-      "rootUri": "file:///Users/m1mac/.pub-cache/hosted/pub.dev/disk_space_upgrade-0.0.3",
+      "rootUri": "file:///Users/m1mac/.pub-cache/git/disk_space_upgrade-4548479a8241351a4e67c71fa5dbe83f917fec62/",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     },
@@ -344,7 +344,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2025-04-17T13:11:34.029514Z",
+  "generated": "2025-04-18T05:17:47.731295Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///Users/m1mac/flutter",

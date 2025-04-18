@@ -84,10 +84,11 @@ packages:
   disk_space_upgrade:
     dependency: transitive
     description:
-      name: disk_space_upgrade
-      sha256: ccc7969d6e9ea4895946da953a36c14344b7cbbb6c87bf7c134b39ada46dc10b
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: "4548479a8241351a4e67c71fa5dbe83f917fec62"
+      url: "https://github.com/mzeeshan-whizpool/disk_space_upgrade"
+    source: git
     version: "0.0.3"
   fake_async:
     dependency: transitive
