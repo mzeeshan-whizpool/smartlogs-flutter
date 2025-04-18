@@ -135,9 +135,9 @@
     },
     {
       "name": "intl",
-      "rootUri": "file:///Users/m1mac/.pub-cache/hosted/pub.dev/intl-0.20.2",
+      "rootUri": "file:///Users/m1mac/.pub-cache/hosted/pub.dev/intl-0.19.0",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.0"
     },
     {
       "name": "leak_tracker",
@@ -344,7 +344,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2025-04-18T05:17:47.731295Z",
+  "generated": "2025-04-18T05:20:12.089579Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///Users/m1mac/flutter",
