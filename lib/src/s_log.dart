@@ -71,12 +71,24 @@ class Slog {
       _logDirectory = await _getDirectory();
       _logFileName = _getLogFileName();
 
-      /// Checking for zip fiel if exist delete it
+      /// Checking for zip file if exist delete it.
+      /// Uses async delete with recursive: true and a try/catch to guard
+      /// against FileSystemException (errno=39 "Directory not empty") on
+      /// Android when a previous session left files inside the zip folder
+      /// and the OS hasn't released their handles yet.
       final zipDirectory =
       Directory('${_logDirectory!.parent.path}/$_zipFolderName');
 
       if (zipDirectory.existsSync()) {
-        zipDirectory.deleteSync(recursive: true);
+        try {
+          await zipDirectory.delete(recursive: true);
+        } catch (e) {
+          // Non-fatal: old zip folder could not be cleaned up.
+          // The app must still start normally.
+          if (kDebugMode) {
+            print('smart_logs: failed to delete zip folder ($e). Continuing.');
+          }
+        }
       }
 
       /// initializing instance
